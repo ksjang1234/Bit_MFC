@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C812B17D-6C66-42F8-B8C9-FD853ACE1CCF}</ProjectGuid>
-    <RootNamespace>BitMFC</RootNamespace>
+    <ProjectGuid>{5B8501FA-1D3D-4537-8F07-D85F8E3A3703}</ProjectGuid>
+    <RootNamespace>CRuntimeClass</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>GetDC_CDC</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -118,14 +117,17 @@
   <ItemGroup>
     <ClInclude Include="CObject.h" />
     <ClInclude Include="CView.h" />
-    <ClInclude Include="DC.h" />
+    <ClInclude Include="CWinApp.h" />
+    <ClInclude Include="CWnd.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObject.cpp" />
     <ClCompile Include="CView.cpp" />
-    <ClCompile Include="DC.cpp" />
+    <ClCompile Include="CWinApp.cpp" />
+    <ClCompile Include="CWnd.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

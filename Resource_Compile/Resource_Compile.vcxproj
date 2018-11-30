@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C812B17D-6C66-42F8-B8C9-FD853ACE1CCF}</ProjectGuid>
-    <RootNamespace>BitMFC</RootNamespace>
+    <ProjectGuid>{4AC807F7-0644-4BE4-9E7F-C5739FB138EB}</ProjectGuid>
+    <RootNamespace>ResourceCompile</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>GetDC_CDC</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -117,15 +116,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CObject.h" />
+    <ClInclude Include="CPaint.h" />
     <ClInclude Include="CView.h" />
     <ClInclude Include="DC.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObject.cpp" />
+    <ClCompile Include="CPaint.cpp" />
     <ClCompile Include="CView.cpp" />
     <ClCompile Include="DC.cpp" />
     <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource_Compile.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor1.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
